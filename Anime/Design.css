@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+*
+{position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkblue;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+}
+p {
+ 
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size :30px;
+  color: rgba(255,255,255,.70);
+  
+  -webkit-box-reflect: below -0.25em linear-gradient(transparent,#0004) ;  
+}
+
+/* Animation */
+p {
+  animation: animated-text 2s steps(30,end) 1s 1 normal both;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 1200px;}
+}
+
+.wave-top {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+}
+
+
+
+
+
